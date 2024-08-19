@@ -1,0 +1,176 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    background-color: blanchedalmond;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(204, 141, 47);
+}
+
+main{
+    max-width: 80%;
+    margin: auto ;
+    margin-top: 40px;
+    margin-bottom: 50px;
+ 
+}
+
+
+footer{
+    text-align: center;
+    height: 30px;
+}
+
+
+button{
+    background-color: blanchedalmond;
+
+}
+
+button>a{
+    text-decoration: none;
+
+}
+
+
+/* main */
+.main-menu{
+    border: 2px solid salmon;
+   border-radius: 3px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+
+    }   
+}
+@media screen and (max-width: 700px) {
+    .card-container{
+        grid-template-columns: 1fr;
+
+    }   
+}
+
+
+.card{
+    text-align: center;
+    width: 100%;
+    border: 2px solid antiquewhite ;
+}
+.card > a{
+    text-decoration: none;
+}
+ .card h2{
+    background-color: antiquewhite;
+    padding: 10px;
+    color:  rgb(204, 141, 47);
+ }
+ .card p {
+    text-align: left;
+    height: 100px;
+    padding: 10px;
+ }
+
+ .add-button{
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: larger;
+    border: none;
+    border-bottom: 2px solid salmon ;
+    
+}
+.add-button  p{
+    font-weight: 700;
+    font-size: x-large;
+    color: salmon;
+    padding: 10px 10px;
+ }
+
+ .add-button > a :hover{
+    color: rgb(244, 215, 177);
+    background-color: salmon;
+ }
+
+
+
+/* note */
+
+form{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+form>input,textarea{
+    width: auto;
+    background-color: antiquewhite;
+    border: 3px solid rgb(235, 150, 39) ;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0px 10px 0px;
+    color: rgb(150, 86, 2) ;
+    font-size: large;
+}
+form>input,textarea:focus-visible{
+    outline-color: rgb(150, 86, 2) ;
+}
+input{
+    height: 30px;
+}
+textarea{
+    height: 90px;
+}
+
+form > button{
+    border: none;
+    border-radius: 5px;
+}
+
+.update{
+    font-weight: 700;
+    font-size: x-large;
+    color: salmon;
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+}
+.update:hover{
+    color: rgb(244, 215, 177);
+    background-color: rgb(78, 205, 122);
+}
+
+.delete > a  {
+    font-weight: 700;
+    font-size: x-large;
+    color: salmon;
+    padding: 5px;
+    display: block;
+
+}
+.delete > a:hover {
+    color: rgb(244, 215, 177);
+    background-color: salmon;
+}
+
+h4{
+    color: rgb(150, 86, 2) ;
+    margin: 0px 0px 10px 5px ;
+
+}

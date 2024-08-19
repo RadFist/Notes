@@ -1,0 +1,1 @@
+obj("olahraga","olahraga itu membantu kita untuk lebih sehat lagi")

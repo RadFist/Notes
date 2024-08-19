@@ -1,0 +1,24 @@
+<%- include('header.ejs') %>
+    <main>
+        <% if (locals.id) { %>
+            <form action="/update" method="post">
+                <input type="id" name="id" placeholder="id" value="<%= id %>" hidden>
+                <input type="text" name="title" placeholder="Title" value="<%= notes[id].title %>">
+                <textarea name="note" id="note" placeholder="note"><%= notes[id].note %></textarea>
+
+                <h4>create on <%= notes[id].time %></h4>
+                <!-- button action -->
+                <button type="submit" class="update">update</button>
+                <button class="delete">
+                    <a href="/delete?id=<%= id %>">delete</a>
+                </button>
+            </form>   
+        <% } else {%>
+        <form action="/submit" method="post">
+             <input type="text" name="title" placeholder="Title">
+             <textarea name="note" id="note" placeholder="note"></textarea>
+             <button type="submit" class="update" >Add +</button>
+        </form>
+       <% }%>
+    </main>
+<%- include('footer.ejs') %>

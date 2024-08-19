@@ -1,0 +1,23 @@
+<%- include('header.ejs') %>
+    <main class="main-menu">
+        <div class="content">
+            <button class="add-button"><a href="/note"><p>new note</p></a></button>
+            <div class="card-container">
+                <% for (iteration in notes){ %>
+                    <div class="card">
+                        <a href="/update?id=<%= iteration %>">
+                           <h2>
+                               <%= notes[iteration].title  %>
+                           </h2>
+                           <p>
+                               <%= notes[iteration].note  %>
+                           </p>
+                        </a>
+                    </div>
+                    <% } %>
+
+            </div>
+            
+        </div>
+    </main>
+<%- include('footer.ejs') %>
